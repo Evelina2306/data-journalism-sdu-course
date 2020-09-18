@@ -1,0 +1,18 @@
+title: data journalism sdu
+description: >-
+  One of the most relevant courses in journalism studying. The DATA Journalism
+  helps us to find and analyze the huge amount of information in the right way
+template:
+  repo: data-journalism-sdu-template
+  name: data-journalism-sdu
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
